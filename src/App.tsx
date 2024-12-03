@@ -51,6 +51,7 @@ const App: React.FC = () => {
           ...outputLines, 
           'Email:joshcrothers1@gmail.com', 
           'Phone:(984-204-3521)', 
+          // TODO change color of <a> tags
           <a href="https://www.linkedin.com/in/joshua-crothers-3592ba1b5/" target="_blank">LinkedIn</a>]);
     }
   };
