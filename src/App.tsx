@@ -5,7 +5,7 @@ import './App.css';
 
 const App: React.FC = () => {
   const [inputValue, setInputValue] = useState('');
-  const [outputLines, setOutputLines] = useState<string[]>([]);
+  const [outputLines, setOutputLines] = useState<Array<string | React.ReactNode>>([]);
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -47,7 +47,11 @@ const App: React.FC = () => {
         setOutputLines([...outputLines, '1. JavaScript', '2. React', '3. TypeScript']);
         break;
       case 'contact':
-        setOutputLines([...outputLines, 'Email:joshcrothers1@gmail.com', 'Phone:(984-204-3521)', 'LinkedIn: https://www.linkedin.com/in/joshua-crothers-3592ba1b5/']);
+        setOutputLines([
+          ...outputLines, 
+          'Email:joshcrothers1@gmail.com', 
+          'Phone:(984-204-3521)', 
+          <a href="https://www.linkedin.com/in/joshua-crothers-3592ba1b5/" target="_blank">LinkedIn</a>]);
     }
   };
 
