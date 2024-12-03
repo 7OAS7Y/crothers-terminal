@@ -1,0 +1,14 @@
+.banner {
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+}
+
+.welcome {
+  font-weight: 800;
+  color: #ff0000;
+  text-align: center;
+}

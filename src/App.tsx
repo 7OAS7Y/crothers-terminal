@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Banner from './Banner';
+import './Banner.css';
 import './App.css';
 
 const App: React.FC = () => {
@@ -46,7 +47,7 @@ const App: React.FC = () => {
         setOutputLines([...outputLines, '1. JavaScript', '2. React', '3. TypeScript']);
         break;
       case 'contact':
-        setOutputLines([...outputLines, 'Email:joshcrothers1@gmail.com', 'Phone:(984-204-3521))', 'LinkedIn:https://www.linkedin.com/in/joshua-crothers-3592ba1b5/)']);
+        setOutputLines([...outputLines, 'Email:joshcrothers1@gmail.com', 'Phone:(984-204-3521)', 'LinkedIn: https://www.linkedin.com/in/joshua-crothers-3592ba1b5/']);
     }
   };
 
@@ -64,10 +65,6 @@ const App: React.FC = () => {
       <Banner />
       <div className="terminal">
         <div className="output">
-          <p>Welcome to my terminal portfolio!</p>
-          {outputLines.map((line, index) => (
-            <p key={index}> {line}</p>
-          ))}
           <p>
             <span id="visitor">visitor</span>@crothers-terminal: 
             <input 
@@ -79,6 +76,9 @@ const App: React.FC = () => {
               ref={inputRef}
             />
           </p>
+          {outputLines.map((line, index) => (
+            <p key={index}> {line}</p>
+          ))}
         </div>
       </div>
     </>
