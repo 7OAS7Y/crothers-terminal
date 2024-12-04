@@ -11,7 +11,7 @@ const Banner: React.FC = () => {
  J   J    O     O     S H   H  U   U A   A    C     C   R  R   O     O   T    H   H  E      R  R       S
   JJJ      OOOOO  SSSS  H   H   UUU  A   A     CCCCC    R   R   OOOOO    T    H   H  EEEEE  R   R  SSSS
 `}
-    <p className="welcome">Welcome to my terminal portfolio!</p>
+    <p className="welcome">WELCOME TO MY TERMINAL PORTFOLIO!</p>
     </pre>
     </>
   );
