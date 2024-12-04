@@ -41,7 +41,10 @@ const App: React.FC = () => {
         setOutputLines([]);
         break;
       case 'projects':
-        setOutputLines([...outputLines, '1. Project 1', '2. Project 2', '3. Project 3']);
+        setOutputLines([...outputLines, 
+        <a href="https://github.com/7OAS7Y/dodge-the-creeps" target="_blank">Dodge the creeps game - Github</a>,
+        <a href="https://github.com/7OAS7Y/simple-calculator" target="_blank">Simple Calculator - Github</a>,
+        <a href="https://7oas7y.github.io/portfolio/" target="_blank">Portfolio - Fun Fact: I used Three.js on this for some 3D graphics rendering!</a>]);
         break;
       case 'skills':
         setOutputLines([...outputLines, '1. JavaScript', '2. React', '3. TypeScript']);
@@ -49,13 +52,12 @@ const App: React.FC = () => {
       case 'contact':
         setOutputLines([
           ...outputLines, 
-          'Email:joshcrothers1@gmail.com', 
-          'Phone:(984-204-3521)', 
-          // TODO change color of <a> tags
+          <span>Email:<a href="mailto:joshcrothers1@gmail.com" target="_blank">joshcrothers1@gmail.com</a></span>, 
+          'Phone:(984-204-3521)',
           <a href="https://www.linkedin.com/in/joshua-crothers-3592ba1b5/" target="_blank">LinkedIn</a>]);
     }
   };
-
+  // MAKE ALL THESE COMMANDS INTO SEPARATE COMPONENTS -- STOP BEING LAZY <DORK />
   const cmds = [
     "help - list all available commands",
     "clear - clear the screen",
