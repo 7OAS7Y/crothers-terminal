@@ -72,6 +72,7 @@ const App: React.FC = () => {
       <Banner />
       <div className="terminal">
         <div className="output">
+          <p>Type 'help' for a list of commands</p>
           <p>
             <span id="visitor">visitor</span>@crothers-terminal: 
             <input 
