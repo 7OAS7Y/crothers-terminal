@@ -57,7 +57,7 @@ const App: React.FC = () => {
           <a href="https://www.linkedin.com/in/joshua-crothers-3592ba1b5/" target="_blank">LinkedIn</a>]);
     }
   };
-  // MAKE ALL THESE COMMANDS INTO SEPARATE COMPONENTS -- STOP BEING LAZY <DORK />
+  
   const cmds = [
     "help - list all available commands",
     "clear - clear the screen",
